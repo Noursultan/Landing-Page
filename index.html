@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+            <img src="img/burber_menu.svg" alt="menu-btn" class="mobile-menu" id="mobile-cta">
+            <nav class="navigation">
+                <img src="img/mobile-exit.svg" alt="exit button" id="mobile_exit_cta" class="mobile-menu-exit">
+                <ul class="nav">
+                    <li><a href="#!">HOME</a></li>
+                    <li><a href="#!">POPULAR</a></li>
+                    <li><a href="#!">NEW COMER</a></li>
+                    <li><a href="#!">ABOUT</a></li>
+                </ul>
+                <a href="#!" class="login">Login</a>
+            </nav>
+            <a href="#!" class="login-primary">Login</a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h1>We enable designer &amp; developers to 
+            <span>build amazing things</span></h1>
+            <p>We have transformed product development, making it faster, simpler... better! That's why in just three years we now help more developers build projects than anyone else.</p>
+        </div>
+    </section>
+
+    <section class="growing-section">
+        <div class="container">
+            <h1>Simple is growing. <br>Grow with us.<br></h1>
+            <p>Duis aute irure dolor in reprehenderit in voluptate 
+                velit esse cillum dolore eu fugiat nulla pariatur 
+                excepteur sint occaecat cupidatat.</p>
+            <img src="/img/main_picture.png" alt="United people">
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <h2>The humans behind the product</h2>
+            <p>Most popular tools for designer and developer</p>
+            <ul>
+                <li>
+                    <img src="/img/team_1.svg" alt="CEO">
+                    <h3>Wahid Ari</h3>
+                    <p>CEO & Co-founder</p>
+                    <p>known as one of the most visionary legal tech entrepreneurs worldwide.</p>
+                    <div class="link">
+                        <a href="#!">Github</a> - <a href="#!">Linkedin</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="/img/team_2.svg" alt="designer">
+                    <h3>Ari</h3>
+                    <p>Head of Design</p>
+                    <p>expert on distributed work culture, cross-functional product teams and the future of work.</p>
+                    <div class="link">
+                        <a href="#!">Github</a> - <a href="#!">Linkedin</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="/img/team_3.svg" alt="frontend developer">
+                    <h3>Wahid</h3>
+                    <p>Front-end Engineer</p>
+                    <p>expert on legal innovation, engages actively in debates, and frequently publishes about client-driven</p>
+                    <div class="link">
+                        <a href="#!">Github</a> - <a href="#!">Linkedin</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="container">
+            <h2>Subscribe</h2>
+            <p>Subscribe to get exclusive news & offer</p>
+            <div class="subscribe-col">
+                <input type="text" placeholder="Email address">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#!" class="logo"><img src="/img/logo.svg" alt="logo"></a>
+                    <div class="social-media">
+                        <a href="#!"><img src="/img/facebook.svg" alt="facebook"></a>
+                        <a href="#!"><img src="/img/instagram.svg" alt="instagram"></a>
+                        <a href="#!"><img src="/img/twitter.svg" alt="twitter"></a>
+                    </div>
+                </li>
+                <li>
+                    <h3>Resource</h3>
+                    <a href="#!">About Us</a>
+                    <a href="#!">Blog</a>
+                    <a href="#!">Contact</a>
+                    <a href="#!">FAQ</a>
+                </li>
+                <li>
+                    <h3>Legal Stuff</h3>
+                    <a href="#!">Disclaimer</a>
+                    <a href="#!">Financing</a>
+                    <a href="#!">Privacy Policy</a>
+                    <a href="#!">Terms of Service</a>
+                </li>
+                <li>
+                    <h3>Office</h3>
+                    <p>gear@gmail.com</p>
+                    <p>Jln. Soekarno Hatta No 1A</p>
+                    <p>Jakarta, Indonesia</p>
+                </li>
+            </ul>
+            <div class="bottom">
+                <p>Made With Love By Gear All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta');
+        const mobileBtnExit = document.getElementById('mobile_exit_cta');
+        nav = document.querySelector('nav')
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn'); 
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+</html>

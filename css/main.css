@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1F2E35;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar nav {
+  display: none;
+}
+.navbar .login-primary {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+  padding: 0.8em 1.6em;
+}
+.navbar .logo img {
+  vertical-align: middle;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+section.hero {
+  background-color: white;
+  background-image: url("/img/background_mobile.png");
+  padding: 2em 1.6em 5em 1.6em;
+  background-size: 100% 100%;
+}
+section.hero h1 {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 155.5555555556%;
+}
+section.hero h1 span {
+  color: #0086D6;
+}
+section.hero p {
+  color: white;
+  font-size: 18px;
+  line-height: 153.5%;
+  text-align: center;
+}
+
+section.growing-section {
+  padding: 4em 1.6em 4em 1.6em;
+  background-color: white;
+}
+section.growing-section h1 {
+  color: #333E44;
+  font-size: 32px;
+  letter-spacing: 0.2px;
+  line-height: 143.75%;
+  text-align: center;
+}
+section.growing-section p {
+  margin-top: 1.5em;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #475E69;
+  text-align: center;
+}
+section.growing-section img {
+  margin-top: 3.5em;
+  width: 100%;
+}
+
+section.team {
+  background-color: white;
+}
+section.team h2 {
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0.2px;
+  line-height: 41px;
+  color: #333E44;
+  text-align: center;
+}
+section.team p {
+  font-size: 18px;
+  color: #475E69;
+  font-weight: 400;
+  line-height: 150%;
+  line-height: 27px;
+  text-align: center;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+section.team li {
+  text-align: center;
+  padding: 2.5em 2em;
+  list-style-type: none;
+}
+section.team li h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+section.team li p:first-of-type {
+  color: #0086D6;
+  font-size: 1em;
+  letter-spacing: 0.2px;
+  margin-top: 0.5em;
+}
+section.team li p {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+}
+section.team li a {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #1F2E35;
+  font-weight: 500;
+}
+section.team .link a:hover {
+  color: white;
+  background-color: #1F2E35;
+  border-radius: 5px;
+}
+
+section.subscribe {
+  background-color: #1F2E35;
+  padding: 2em 1em;
+  text-align: center;
+}
+section.subscribe h2 {
+  color: white;
+  font-size: 36px;
+  letter-spacing: 0.2px;
+  line-height: 32px;
+}
+section.subscribe p {
+  font-size: 1em;
+  letter-spacing: 0.2px;
+  line-height: 27px;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+section.subscribe input {
+  display: block;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 1em;
+  width: 75%;
+  border: none;
+}
+section.subscribe button {
+  background-color: #0086D6;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  padding: 0.6em;
+  border: none;
+  width: 7.5em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+section.subscribe button:hover {
+  color: #0086D6;
+  background-color: white;
+}
+
+footer {
+  background-color: #1F2E35;
+}
+footer .logo {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+footer .logo::after {
+  content: "Gear";
+  color: #F4F4F4;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 700;
+  margin-left: 0.5em;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+footer .social-media {
+  margin-top: 1.5em;
+  display: flex;
+  column-gap: 1em;
+}
+footer .social-media a img:hover {
+  box-shadow: 0 0 0 2px #0086D6;
+  border-radius: 4px;
+}
+footer li {
+  text-align: left;
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: repeat(auto, 1fr);
+}
+footer li h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: white;
+}
+footer li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  line-height: 35px;
+}
+footer li a:hover {
+  color: #0086D6;
+}
+footer li p {
+  color: white;
+  font-size: 1em;
+  line-height: 35px;
+}
+footer ul {
+  display: grid;
+  grid-template-rows: repeat(auto, 1fr);
+  margin: 0 1em 1.5em;
+  row-gap: 1.5em;
+}
+footer .bottom {
+  display: block;
+  text-align: center;
+  background-color: #1D292F;
+}
+footer .bottom p {
+  font-size: 1em;
+  line-height: 30px;
+  color: white;
+  padding: 0.7em 0;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #0086D6;
+  width: 65%;
+  height: 100vh;
+  z-index: 999;
+  padding: 1em;
+}
+nav li {
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+  color: #1F2E35;
+  text-align: right;
+  display: block;
+  font-size: 1.3em;
+  padding: 0.5em;
+}
+nav a:hover {
+  font-weight: bold;
+}
+nav img {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+nav .nav {
+  margin-top: 5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit, .login {
+    display: none;
+  }
+  .navbar .container {
+    padding: 2em 5em;
+    align-items: center;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-evenly;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: white;
+    padding: 0.1em 1em;
+    line-height: 177.7777777778%;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .navbar nav a:hover {
+    color: #0086D6;
+  }
+  .navbar nav .nav {
+    margin: 0;
+  }
+  .navbar .login-primary {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    line-height: 19.5px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    padding: 0.6em 1em;
+    font-size: 18px;
+    background-color: #0086D6;
+    border-radius: 0.5em;
+    align-self: center;
+  }
+  .navbar .login-primary:hover {
+    color: #0086D6;
+    background-color: white;
+  }
+  section.hero {
+    background-image: url("/img/hero_background.png");
+    background-repeat: no-repeat;
+    padding: 2em 20% 5em;
+  }
+  section.hero p {
+    padding: 0 10%;
+  }
+  section.growing-section h1 br {
+    display: none;
+  }
+  section.growing-section p {
+    padding: 0 25%;
+  }
+  section.growing-section img {
+    padding: 0 20%;
+  }
+  footer ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    margin: 0 5em 1.5em;
+    justify-items: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  section.hero {
+    background-image: url("/img/hero_background_drawing.png"), url("/img/hero_background.png");
+    background-position: 0 -20px, 0;
+  }
+  section.team li {
+    padding: 0;
+    align-self: center;
+  }
+  section.team ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4em 5em;
+    column-gap: 2em;
+  }
+  section.subscribe input {
+    display: unset;
+    width: 25%;
+  }
+  section.subscribe button {
+    margin: 0 0 0 0.7em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+  }
+}/*# sourceMappingURL=main.css.map */
